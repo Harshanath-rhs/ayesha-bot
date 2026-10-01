@@ -144,8 +144,8 @@ if st.session_state.pending:
                 "model": "openai/gpt-oss-120b",
                 "messages": api_messages,
                 "temperature": 0.9,
-                "reasoning_effort": "low",       # faster, snappier replies
-                "max_completion_tokens": 500,    # reasoning tokens count too, so keep some room
+                "reasoning_effort": "high",       # faster, snappier replies
+                "max_completion_tokens": 2000,    # reasoning tokens count too, so keep some room
             },
             timeout=30,
         )
